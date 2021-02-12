@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<queries>
+	<create_table_countries2020_2021>
+            DROP TABLE IF EXISTS {table_name};
+            CREATE TABLE {table_name}
+            (
+                Country VARCHAR, 
+                Total_2020 INTEGER , 
+		        Total_2021 INTEGER
+            );
+	</create_table_countries2020_2021>
+    <create_table_totals2020_2021>
+            DROP TABLE IF EXISTS {table_name};
+            CREATE TABLE {table_name}
+            (   fields VARCHAR,
+                Total_2020 INTEGER , 
+		        Total_2021 INTEGER
+            );
+    </create_table_totals2020_2021>
+    <select_query>
+        SELECT * FROM {table_name}
+    </select_query>
+</queries>
